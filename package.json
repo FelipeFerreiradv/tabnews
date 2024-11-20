@@ -8,7 +8,7 @@
     "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "build": "npm run build"
+    "build": "next build"
   },
   "author": "",
   "license": "MIT",
