@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write ."
+    "lint:fix": "prettier --write .",
+    "build": "npm run build"
   },
   "author": "",
   "license": "MIT",
@@ -17,6 +18,11 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "@types/node": "^22.9.1",
+    "@types/react": "^18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
   }
 }
