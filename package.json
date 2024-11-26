@@ -13,12 +13,15 @@
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "build": "next build"
+    "migration:create": "node-pg-migrate --m infra/migrations create",
+    "migration:up": "node-pg-migrate --m infra/migrations --envPath .env.development up"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "next": "^15.0.3",
+    "node-pg-migrate": "^7.8.0",
     "pg": "^8.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
