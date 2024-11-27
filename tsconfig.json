@@ -21,7 +21,8 @@
     "**/*.tsx",
     "models/calculator.js",
     "tests/calculator.test.js",
-    "infra/database.js"
+    "infra/database.js",
+    "pages/api/v1/migrations/index.js"
   ],
   "exclude": ["node_modules"]
 }
