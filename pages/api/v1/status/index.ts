@@ -1,6 +1,7 @@
+import { NextApiRequest, NextApiResponse } from "next";
 import database from "../../../../infra/database";
 
-const status = async (request: any, response: any) => {
+const status = async (request: NextApiRequest, response: NextApiResponse) => {
   const updateAt = new Date().toISOString();
 
   const databaseVersionResult = await database.query("SHOW server_version;");

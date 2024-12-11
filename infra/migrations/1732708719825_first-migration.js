@@ -3,6 +3,9 @@
  */
 exports.shorthands = undefined;
 
+/* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
+
 /**
  * @param pgm {import('node-pg-migrate').MigrationBuilder}
  * @param run {() => void | undefined}

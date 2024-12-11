@@ -8,9 +8,9 @@ const waitForAllServices = async () => {
       maxTimeout: 5000,
     });
 
-    async function fethStatusPage(bail, tryNumber) {
+    async function fethStatusPage() {
       const response = await fetch("http://localhost:3000/api/v1/status");
-      const responseBody = await response.json();
+      // const responseBody = await response.json();
 
       if (response.status != 200) {
         throw Error(`ERROR ${response.status}`);
@@ -21,6 +21,8 @@ const waitForAllServices = async () => {
   await waitForWebServer();
 };
 
-export default {
+const orchestrator = {
   waitForAllServices,
 };
+
+export default orchestrator;
