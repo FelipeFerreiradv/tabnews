@@ -23,7 +23,8 @@
     "tests/calculator.test.js",
     "infra/database.js",
     "pages/api/v1/migrations/index.js",
-    "infra/scripts/wait-for-postgres.js"
+    "infra/scripts/wait-for-postgres.js",
+    "commitlint.config.ts"
   ],
   "exclude": ["node_modules"]
 }
