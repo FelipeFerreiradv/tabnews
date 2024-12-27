@@ -3,6 +3,10 @@
     "eslint:recommended",
     "plugin:jest/recommended",
     "next/core-web-vitals",
+    "plugin:react/jsx-runtime",
     "prettier"
-  ]
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }

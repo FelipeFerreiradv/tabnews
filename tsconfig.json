@@ -13,18 +13,24 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "module": "esnext"
+    "module": "esnext",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "models/calculator.js",
-    "tests/calculator.test.js",
+    "app/api/v1/migrations/index.js",
+    "commitlint.config.ts",
     "infra/database.js",
-    "pages/api/v1/migrations/index.js",
     "infra/scripts/wait-for-postgres.js",
-    "commitlint.config.ts"
+    "models/calculator.js",
+    "next-env.d.ts",
+    "tests/calculator.test.js",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
