@@ -24,7 +24,8 @@
     "infra/database.js",
     "pages/api/v1/migrations/index.js",
     "infra/scripts/wait-for-postgres.js",
-    "commitlint.config.ts"
+    "commitlint.config.ts",
+    "pages/status/index.tsx"
   ],
   "exclude": ["node_modules"]
 }
