@@ -1,9 +1,19 @@
-import Capslock from "./_components/capslock";
+import useSWR from "swr";
+
+const fecthStatus = async () => {
+  const response = await fetch("api/v1/status");
+  const responseBody = await response.json();
+  return responseBody;
+};
 
 const Status = () => {
+  const response = useSWR("status", fecthStatus);
+  console.log(response.isLoading);
+  console.log(response.data);
+
   return (
     <>
-      <Capslock text="Hello world" />
+      <h1>Status Page</h1>
     </>
   );
 };
