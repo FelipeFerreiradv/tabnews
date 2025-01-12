@@ -1,9 +1,10 @@
-import Capslock from "./_components/capslock";
+import UpdatedAt from "./_components/updated-at";
 
 const Status = () => {
   return (
     <>
-      <Capslock text="Hello world" />
+      <h1>Status Page</h1>
+      <UpdatedAt />
     </>
   );
 };
