@@ -1,19 +1,12 @@
-import useSWR from "swr";
-
-const fecthStatus = async () => {
-  const response = await fetch("api/v1/status");
-  const responseBody = await response.json();
-  return responseBody;
-};
+import DatabaseStatusPage from "./_components/database-status";
+import UpdatedAt from "./_components/updated-at";
 
 const Status = () => {
-  const response = useSWR("status", fecthStatus);
-  console.log(response.isLoading);
-  console.log(response.data);
-
   return (
     <>
       <h1>Status Page</h1>
+      <UpdatedAt />
+      <DatabaseStatusPage />
     </>
   );
 };
